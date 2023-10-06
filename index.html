@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- swiper.css cdn으로 연결 -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- 사용자 정의 css 연결 -->
+    <link rel="stylesheet" href="css/landers.css" />
+    <!-- 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/SSGLANDERS/Logo/logo 20x16.png" type="image/x-icon">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- swiper.js cdn으로 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- gsap 플러그인 연결 무조건 사용자 정의js 위에 -->
+    <script src="js/gsap.min.js"></script>   
+    <!-- 사용자 정의 js 연결 -->
+    <script src="js/landers.js"></script>
+    <title>SSG LANDERS</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="center">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="index.html">                
+                    </a>
+                </div>
+                <!-- 내비게이션 -->
+                <nav>
+                    <ul>
+                        <li> <!--landers 메뉴-->
+                            <a href="#">LANDERS</a>
+                            <ul class="sub">
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">엠블럼</a></li>
+                                <li><a href="#">후원사</a></li>
+                                <li><a href="#">구단정보</a></li>
+                            </ul>
+                        </li> <!--landers 메뉴 끝-->
+                        <li><!--players 메뉴-->
+                            <a href="#">PLAYERS</a>
+                            <ul class="sub">
+                                <li><a href="#">코칭스태프</a></li>
+                                <li><a href="#">투수</a></li>
+                                <li><a href="#">포수</a></li>
+                                <li><a href="#">내야수</a></li>
+                                <li><a href="#">외야수</a></li>
+                                <li><a href="#">내야수</a></li>
+                                <li><a href="#">군입대선수</a></li>
+                            </ul>
+                        </li><!--players 메뉴 끝-->
+                        <li><!--game 메뉴-->
+                            <a href="#">GAME</a>
+                            <ul class="sub">
+                                <li><a href="#">경기일정</a></li>
+                                <li><a href="#">입장권 안내</a></li>
+                                <li><a href="#">단체관람 신청</a></li>                            
+                            </ul>
+                        </li><!--game 메뉴 끝-->
+                        <li><!--media 메뉴-->
+                            <a href="#">MEDIA</a>
+                            <ul class="sub">
+                                <li><a href="#">랜더스 소식</a></li>
+                                <li><a href="#">랜더스 포토</a></li>                            
+                            </ul>
+                        </li><!--media 메뉴 끝-->
+                        <li><!--fan 메뉴-->
+                            <a href="#">FAN</a>
+                            <ul class="sub">
+                                <li><a href="#">SNS</a></li>
+                                <li><a href="#">응원단</a></li>                          
+                            </ul>
+                        </li><!--fan 메뉴-->
+                        <li><!--stadium 메뉴-->
+                            <a href="#">STADIUM</a>
+                            <ul class="sub">
+                                <li><a href="#">구장소개</a></li>
+                                <li><a href="#">주차안내</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>                          
+                            </ul>
+                        </li><!--stadium 메뉴 끝-->
+                        <li class="shop1">
+                            <a href="#">SHOP by Emart ↗</a>                       
+                        </li>
+                        <li class="shop2">
+                            <a href="#">SHOP by hyungji ↗</a>                       
+                        </li>                        
+                    </ul>                    
+                </nav>
+                <!-- 다국어지원, 메뉴버튼 -->
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <svg aria-labelledby="languageIconTitle" color="#2329D6" class="lang" fill="none" height="26px" role="img" stroke="#212121" 
+                            stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"
+                             width="48px" xmlns="http://www.w3.org/2000/svg">
+                             <title id="languageIconTitle"/><circle cx="12" cy="12" r="10"/>
+                             <path d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,
+                             4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,
+                             19.5757576 12,22 Z" stroke-linecap="round"/><path d="M2.5 9L21.5 9M2.5 15L21.5 15"
+                             stroke-linecap="round"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_btn">
+                             <svg id="Layer_1" style="enable-background:new 0 0 30 30;" version="1.1" height="26px" viewBox="0 0 20 30" xml:space="preserve" 
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+                             <line class="menu" x1="3" x2="27" y1="15" y2="15"/><line class="menu" x1="3" x2="27" y1="8" y2="8"/><line class="menu" stroke-linejoin:round;stroke-miterlimit:10;
+                             x1="3" x2="27" y1="22" y2="22"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_bg"></div>
+        </header>
+        <section class="sec1">
+            <!-- 메인슬라이드 siper plugin -->
+            <!-- Slider main container -->
+            <div class="swiper main">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                <div class="swiper-slide s1">
+                    <h1>제목</h1>
+                    <p>내용</p>
+                </div>
+                <div class="swiper-slide s2">
+                    <h1>제목</h1>
+                    <p>내용</p>
+                </div>
+                <div class="swiper-slide s3">
+                    <h1>제목</h1>
+                    <p>내용</p>
+                </div>
+                </div>
+                 <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="sec2 scrollSet">
+            <div class="center">
+                <div class="ticket ani firstAni">                     
+                        <a href="#"></a>                  
+                </div>
+                <div class="parking ani secondAni">
+                    <button type="button">
+                        <a href="#">주차 안내</a>
+                    </button>                   
+                </div>
+            </div>
+        </section>
+        <section class="sec3 scrollSet" >
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>랜더스 소식 </h2><br>
+                    <p>랜더스의 소식을 전합니다!</p>
+                    <button type="button"><a href="#">자세히 보기 →</a></button>
+                </div>
+                <!-- swiper slide -->
+                <div class="swiper new ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1"></div>
+                            <button type="button"><a href="#">더블헤더 안내</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2"></div>
+                            <button type="button"><a href="#">신인 드래프트</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3"></div>
+                            <button type="button"><a href="#">김광현 탈삼진</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4"></div>
+                            <button type="button"><a href="#">최정 최다득점</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5"></div>
+                            <button type="button"><a href="#">김강민 경기출장</a></button>
+                        </div>
+                    </div><!--swiper wrapper-->                    
+                    <!-- pagination progress -->
+                    <div class="swiper-pagination">
+
+                    </div>
+                </div><!--swiper-->
+                <!-- prev버튼, next버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="sec4 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>랜더스 스토리 </h2><br>
+                    <p>SSG랜더스의 업로드 영상을 확인하세요!</p>
+                    <button type="button"><a href="#">자세히 보기 →</a></button>
+                </div>
+                <!-- swiper slide -->
+                <div class="swiper up ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1"></div>
+                            <button type="button"><a href="#">개그우먼 신기루</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2"></div>
+                            <button type="button"><a href="#">우천으로 취소</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3"></div>
+                            <button type="button"><a href="#">두 원소의 만남</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4"></div>
+                            <button type="button"><a href="#">저 군대가요</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5"></div>
+                            <button type="button"><a href="#">쓱샥숑</a></button>
+                        </div>
+                    </div><!--swiper wrapper-->
+                    <!-- pagination progress -->
+                    <div class="swiper-pagination">
+
+                    </div>
+                </div><!--swiper-->
+                <!-- prev버튼, next버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="sec5 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>SSG랜더스</h2>
+                    <p>KBO 최고의 명문 팀 통산우승횟수 1위</p>
+                    <div class="icon">
+                        <img src="img/SSGLANDERS/main/logo.png" alt="이미지">
+                    </div>
+                </div>
+                <div class="statis ani secondAni" id="count-area">
+                    <ul>
+                        <li>
+                            <img src="img/SSGLANDERS/icon/BALL ICON.png" alt="로고">
+                            <p>2022년 우승 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                            <div class="font">
+                                <p>WIRE-TO-WIRE</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/SSGLANDERS/icon/BALL ICON.png" alt="로고">
+                            <p>통합 우승 횟수 5회</p>                            
+                            <div class="font">
+                                <p> 2007, 2008, 2010, 2018, 2022</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/SSGLANDERS/icon/BALL ICON.png" alt="로고">
+                            <p>입장 평균 관중 2위</p>
+                            <div class="count">
+                                <span class="num"
+                                id="count-item2" >14755</span>
+                                <b>명</b>                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sec6 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>계열사 소개</h2>
+                    <p>신세계그룹의 계열사인 이마트 가 운영하는 KBO리그 프로 야구단.<br>
+                    연고지는 인천광역시. 팀명이 된 SSG 는 신세계그룹의
+                    온라인 쇼핑몰 사업을 전담하고 있는 SSG.COM에서 따왔다.
+                    신세계 그룹의 계열사 를 소개한다.
+                    </p>
+                    <button type="button">
+                        <a href="#">SSG.COM ↗</a>
+                    </button>
+                    <button type="button">
+                        <a href="#">E-MART ↗</a>
+                    </button>                               
+                </div>
+                <div class="online">
+                    <ul>    
+                        <li class="on1 ani ani1"><a href="#">e-mart</a></li>
+                        <li class="on2 ani ani2"><a href="#">ssg.com</a></li>
+                        <li class="on3 ani ani3"><a href="#">starbucks</a></li>
+                        <li class="on4 ani ani4"><a href="#">신세계 L&B</a></li>
+                        <li class="on5 ani ani5"><a href="#">신세계 건설</a></li>
+                        <li class="on6 ani ani6"><a href="#">신세계 아이앤씨</a></li>
+                        <li class="on7 ani ani7"><a href="#">신세계 푸드</a></li>
+                        <li class="on8 ani ani8"><a href="#">신한은행</a></li>
+                        <li class="on9 ani ani9"><a href="#">하이트 진로</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer1">
+                    <div class="f_logo">
+                        <img src="img/SSGLANDERS/Logo/LOGO.png" alt="logo">
+                    </div>                            
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">고객정보 취급방침</a></li>
+                            <li><a href="#">신용정보 활용체제</a></li>
+                            <li><a href="#">이메일 무단수집 거부</a></li>
+                            <li><a href="#">CCTV 운영관리 준칙</a></li>
+                            <li><a href="#">민원접수</a></li>
+                        </ul>                
+                    </div>
+                    <address>
+                        기타문의:1599-6970 티켓문의:1588-7890 <br>
+                        주소:인천광역시 미추홀구 매소홀로 618(문학동)<br>                        
+                    </address>
+                    <p>COPYRIGHT&copy; 2022NH REITS MANAGEMENT. ALL RIGHTS RESERVED.</p>
+                </div>    
+            <div class="footer2">
+                <div class="family_site">
+                    <a href="#">Family Site</a>
+                    <div class="family_list">
+                        <ul>
+                            <li><a href="#">ssg.com</a></li>
+                            <li><a href="#">e-mart</a></li>
+                            <li><a href="#">starbucks</a></li>
+                            <li><a href="#">신세계 l&b</a></li>
+                            <li><a href="#">신세계 건설</a></li>
+                            <li><a href="#">신세계 아이앤씨</a></li>
+                            <li><a href="#">신세계 푸드</a></li>
+                            <li><a href="#">신한은행</a></li>
+                            <li><a href="#">하이트 진로</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/SSGLANDERS/icon/footer_sns_landers.png" alt="landers">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/SSGLANDERS/icon/footer_sns_instagram.png" alt="insta">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/SSGLANDERS/icon/footer_sns_youtube.png" alt="youtube">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- top button -->
+    <div class="top">
+        <a href="#">
+            <img src="img/SSGLANDERS/icon/arrow_icon.png" alt="up arrow">
+        </a>
+    </div>
+    <script>
+        // sec5영역의 count animation
+        function count(element, start, end, duration) {
+        let current = start;
+        const range = end - start;
+        const increment = range / (duration / 10);
+        const stepTime = 50; // 10ms 마다 증가하도록 설정
+
+        let timer = setInterval(function() {
+            current += increment;
+            if (current >= end) {
+                clearInterval(timer);
+                current = end;
+            }
+            element.textContent = formatNumber(current, end);
+        }, stepTime);
+    }
+
+    function formatNumber(number, end) {
+        if (Number.isInteger(end)) {
+            return number.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+        } else {
+            return number.toFixed(1);
+        }
+    }
+
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', function() {
+        const countArea = document.getElementById('count-area');
+        const countAreaPosition = countArea.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (countAreaPosition < screenPosition / 2) { // 요소가 반이상 보였을 때 실행
+
+            const count1 = document.getElementById('count-item1');
+            count(count1, 0, 14755, 1000);
+
+            const count2 = document.getElementById('count-item2');
+            count(count2, 0, 14755, 500);
+
+
+            // 이벤트 리스너 삭제
+            window.removeEventListener('scroll', arguments.callee);
+        }
+        // 브라우저 해상도가 변경되면 미디어 쿼리 적용하기
+        // 또는 브라우저를 확대, 축소해서 홈페이지 비율 유지하기.
+
+        // resize() 메서드
+        // 글자크기, padding, margin 의 단위를 rem 사용하기.
+        // rem:root 가로크기 기준（root == window)
+        // vw, vh : device 기준 
+    });
+    (function($) {
+            $.AdjustZoom = function(options) {
+            var option = { zoomRatio : 100 };
+            $.extend(option, options);
+            // 브라우저 배율이 100% 가 아닌 경우 처리
+            if(screen.logicalXDPI != screen.deviceXDPI) {
+                try {
+                //alert(screen.availWidth+", "+screen.logicalXDPI+", "+screen.deviceXDPI);
+                        var ratio = screen.logicalXDPI / screen.deviceXDPI;
+                        var ratio_reverse = screen.deviceXDPI / screen.logicalXDPI;
+                        $('body').css('zoom', ( ratio * option.zoomRatio)+'%');
+                        $('body').width(screen.availWidth * ratio_reverse );
+            }catch (e) {
+                alert("브라우저 배율 보정 중 오류가 발생하였습니다. 창을 닫은 후 다시 열어 주시기 바랍니다.");
+            }
+        }
+    };
+    })(jQuery);
+    </script>
+</body>
+</html>
